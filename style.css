@@ -34,12 +34,13 @@ ul {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: auto;
+  /*padding: 30px;*/
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+  padding: auto;
 }
 #titreh3 {
   font-size: 30px;
@@ -74,12 +75,23 @@ button {
   background-color: rgb(225, 53, 53);
   color: aliceblue;
   font-size: 15px;
+  font-size: 15px;
   height: 30px;
   width: 120px;
   border-radius: 10px;
 }
+
+#charte button {
+  font-size: 10px;
+}
+
+.bouton_rouge_bas button {
+  font-size: 10px;
+}
 .differentes_regles {
-  margin-top: 70px;
+  /* margin-top: 70px;
+  /*margin-left: auto;
+  margin-right: auto;*/
   margin: 20px;
 }
 .code_js {
@@ -91,7 +103,7 @@ button {
 .bouton_rouge_bas {
   padding-left: 45%;
   display: flex;
-  margin-top: 70px;
+  margin: auto;
 }
 .bouton_rouge_bas button {
   font-size: 10px;
