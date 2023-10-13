@@ -16,6 +16,9 @@ header {
   padding-left: 255px;
   box-shadow: rgba(0, 0, 0, 0.65) 0px 0px 10px;
 }
+#charte button {
+  font-size: 10px;
+}
 h1 {
   text-align: left;
 }
@@ -31,12 +34,16 @@ ul {
   background-color: #eee;
   color: #444;
   cursor: pointer;
-  padding: 18px;
+  padding: auto;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
   transition: 0.4s;
+}
+#titreh3 {
+  font-size: 30px;
+  font-family: "Arial";
 }
 
 .panel {
@@ -66,15 +73,14 @@ ul {
 button {
   background-color: rgb(225, 53, 53);
   color: aliceblue;
-  font-size: 10px;
+  font-size: 15px;
   height: 30px;
   width: 120px;
   border-radius: 10px;
 }
 .differentes_regles {
   margin-top: 70px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 20px;
 }
 .code_js {
   background-color: rgb(192, 192, 204);
@@ -86,4 +92,7 @@ button {
   padding-left: 45%;
   display: flex;
   margin-top: 70px;
+}
+.bouton_rouge_bas button {
+  font-size: 10px;
 }
