@@ -26,6 +26,12 @@ p h1 h2 h3 h4 {
 ul {
   list-style-image: url(images/bullet.png);
 }
+.accordion{
+
+}
+.panel{
+  
+}
 #paragraphe {
   background-color: rgb(251, 251, 251);
   border-radius: 10px;
