@@ -1,4 +1,4 @@
-var acc = document.getElementsByClassName("accordion");
+var accordeon = document.getElementsByClassName("accordion");
 var i;
 
 for (i = 0; i < acc.length; i++) {
@@ -33,29 +33,23 @@ function main() {
   var j;
 
   for (j = 0; j <= tab.length - 1; j++) {
-    tab[j] = Math.floor(Math.random()*tab.length);
+    tab[j] = Math.floor(Math.random() * tab.length);
     if (tab[j] == 0) {
-      ("Kris");
       window.alert("Kris");
     } else {
       if (tab[j] == 1) {
-        ("Audrey");
         window.alert("Audrey");
       } else {
         if (tab[j] == 2) {
-          ("Manue");
           window.alert("Manue");
         } else {
           if (tab[j] == 3) {
-            ("Severine");
             window.alert("Severine");
           } else {
             if (tab[j] == 4) {
-              ("Elodie");
               window.alert("Elodie");
             } else {
               if (tab[j] == 5) {
-                ("Xavier");
                 window.alert("Xavier");
               } else {
                 if (tab[j] == 6) {
@@ -79,10 +73,10 @@ function main() {
         }
       }
     }
-    document.getElementById("change").button.innerHTML = replace(
-      "Random Apprenant",
-      tab[j]
-    );
   }
+  document.getElementById("change").innerHTML = button.replace(
+    "Random Apprenant",
+    tab[j]
+  );
 }
 main();
