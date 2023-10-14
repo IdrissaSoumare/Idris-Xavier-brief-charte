@@ -13,7 +13,7 @@ container {
 header {
   display: flex;
   height: auto;
-  padding-left: 18%;
+  padding-left: 22%;
   box-shadow: rgba(0, 0, 0, 0.65) 0px 0px 10px;
 }
 #charte button {
@@ -28,8 +28,8 @@ h2 img {
 }
 p h1 h2 h3 h4 {
   font-family: Arial;
-  font-size: 10px;
 }
+
 ul {
   list-style-image: url(images/bullet.png);
 }
@@ -59,6 +59,7 @@ ul {
 }
 
 #paragraphe {
+  /*display: flex;*/
   background-color: rgb(251, 251, 251);
   border-radius: 10px;
   padding: 15px;
@@ -92,20 +93,25 @@ button {
 .bouton_rouge_bas button {
   font-size: 10px;
 }
+
 .differentes_regles {
-  /* margin-top: 70px;
+  margin-top: 8%;
   /*margin-left: auto;
   margin-right: auto;*/
-  margin: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 4%;
 }
 .code_js {
   background-color: rgb(192, 192, 204);
   border-radius: 10px;
   padding: 15px;
   border: solid 1px;
+  margin: 20px;
+  margin-bottom: 7%;
 }
 .bouton_rouge_bas {
-  padding-left: 45%;
+  padding-left: 40%;
   display: flex;
   margin: auto;
 }
