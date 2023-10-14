@@ -20,7 +20,11 @@ header {
   font-size: 10px;
 }
 h1 {
-  text-align: left;
+  margin-left: 65px;
+}
+
+h2 img {
+  background-color: rgb(233, 233, 234);
 }
 p h1 h2 h3 h4 {
   font-family: Arial;
@@ -107,4 +111,10 @@ button {
 }
 .bouton_rouge_bas button {
   font-size: 10px;
+}
+
+@media only screen and (max-width: 610px) {
+  h1 {
+    font-size: 25px;
+  }
 }
