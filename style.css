@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   /*align-items: center;*/
   justify-content: center;
+  /*font-size: 100%;*/
 }
 container {
   margin-left: auto;
@@ -14,7 +15,8 @@ header {
   display: flex;
   height: auto;
   width: 100%;
-  padding-left: 22%;
+  padding-left: auto;
+  /*padding-left: 15%;*/
   background-color: rgb(233, 233, 234);
   box-shadow: rgba(0, 0, 0, 0.65) 0px 0px 10px;
   justify-content: baseline;
@@ -22,17 +24,44 @@ header {
   margin: auto;
   top: 0;
 }
+.align-left {
+  position: relative;
+  left: 18%;
+  width: 100%;
+  display: flex;
+  float: left;
+  text-align: left;
+  text-align: justify;
+}
 
 #charte button {
   font-size: 10px;
 }
+.bouton_rouge_haut {
+  display: flex;
+  float: right;
+  flex-direction: column;
+  size-adjust: auto;
+}
 h1 {
   /*margin-left: 65px;*/
   text-align: center;
+  position: sticky;
+  font-size: 2vw;
+  font-size: 2.8vmax;
+  /*font-size: 4vmin;*/
+  /* vw , vh VIEWWIDTH et VIEWHEIGHT Valeurs adaptatives pour les largeurs d'écrans*/
+}
+.intro h2 {
+  font-size: 2.5vmax;
+  /* vw , vh VIEWWIDTH et VIEWHEIGHT Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
 h2 img {
   background-color: rgb(233, 233, 234);
+}
+P {
+  font-size: 1.4vmax;
 }
 p h1 h2 h3 h4 {
   font-family: Arial;
@@ -73,6 +102,9 @@ ul {
   padding: 15px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+  font-size: 1.4vw;
+  font-size: 1.5vmax;
+  /* vw , vh VIEWWIDTH et VIEWHEIGHT Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
 #charte {
@@ -100,6 +132,11 @@ button {
 
 .bouton_rouge_bas button {
   font-size: 10px;
+}
+
+h4 {
+  font-size: 1.3vmax;
+  /* vw , vh, vmin VIEWWIDTH et VIEWHEIGHT VIEWMIN : Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
 .differentes_regles {
