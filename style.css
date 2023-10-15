@@ -41,7 +41,11 @@ header {
   display: flex;
   float: right;
   flex-direction: column;
-  size-adjust: auto;
+  /*size-adjust: auto;*/
+}
+#btn_rouge {
+  height: 30px;
+  width: 120px;
 }
 h1 {
   /*margin-left: 65px;*/
@@ -102,8 +106,7 @@ ul {
   padding: 15px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
-  font-size: 1.4vw;
-  font-size: 1.5vmax;
+  font-size: 1.2vmax;
   /* vw , vh VIEWWIDTH et VIEWHEIGHT Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
@@ -112,17 +115,13 @@ ul {
   margin-right: 20px;
 }
 
-.bouton_rouge_haut {
-  display: flex;
-  float: right;
-}
 button {
   background-color: rgb(225, 53, 53);
   color: aliceblue;
   font-size: 15px;
   font-size: 15px;
-  height: 30px;
-  width: 120px;
+  max-height: 110%;
+  max-width: 110%;
   border-radius: 10px;
 }
 
@@ -159,6 +158,10 @@ h4 {
   padding-left: 40%;
   display: flex;
   margin: auto;
+}
+#change {
+  height: 30px;
+  width: 120px;
 }
 .bouton_rouge_bas button {
   font-size: 10px;
