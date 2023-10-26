@@ -1,28 +1,80 @@
 body {
+  padding: Opx;
   background-color: rgb(233, 233, 234);
-  display: flex;
+  margin: 0px;
+  /*display: flex;
   flex-direction: column;
-  /*align-items: center;*/
+  align-items: center;*/
   justify-content: center;
   /*font-size: 100%;*/
+  font-family: verdana;
 }
-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 900px;
+
+content {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1%;
+  grid-template-areas:
+    "a a a a a"
+    ". b b b ."
+    ". c c c ."
+    ". d d d ."
+    ". e e e ."
+    ". f f f ."
+    ". g g g ."
+    ". h h h ."
+    "i i i i i";
+  align-items: center;
+  /*grid-template-columns: 40px 50px auto 50px 40px;
+  grid-template-rows: 25% 100px auto;*/
 }
 header {
-  display: flex;
+  left: Opx;
+  top: 0px;
+  grid-area: a;
+  /*display: flex;*/
   height: auto;
   width: 100%;
-  padding-left: auto;
+  padding-left: 4%;
   /*padding-left: 15%;*/
-  background-color: rgb(233, 233, 234);
+  background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.65) 0px 0px 10px;
   justify-content: baseline;
-  position: sticky;
-  margin: auto;
-  top: 0;
+  position: fixed;
+}
+button {
+  border-style: none;
+}
+.bloc_b {
+  grid-area: b;
+  margin-top: 10%;
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1%;
+  grid-template-areas:
+    "a a . . b"
+    "a a . . ."
+    ". . . . .";
+}
+.bloc_c {
+  grid-area: c;
+}
+.bloc_d {
+  grid-area: d;
+}
+.bloc_e {
+  grid-area: e;
+}
+.bloc_f {
+  grid-area: f;
+}
+.bloc_g {
+  grid-area: g;
+}
+.bloc_h {
+  grid-area: h;
 }
 .align-left {
   position: relative;
@@ -37,10 +89,18 @@ header {
 #charte button {
   font-size: 10px;
 }
+.intro {
+  grid-area: a;
+  text-justify: left;
+  padding-left: 11%;
+  width: 170%;
+}
 .bouton_rouge_haut {
-  display: flex;
-  float: right;
+  display: inline-block;
   flex-direction: column;
+  grid-area: b;
+  margin-top: 23%;
+  /*flex-direction: column;*/
   /*size-adjust: auto;*/
 }
 #btn_rouge {
@@ -64,11 +124,12 @@ h1 {
 h2 img {
   background-color: rgb(233, 233, 234);
 }
-P {
-  font-size: 1.4vmax;
-}
+
 p h1 h2 h3 h4 {
-  font-family: Arial;
+  font-family: verdana;
+}
+#titre_classe {
+  font-size: 160%;
 }
 
 ul {
@@ -89,7 +150,7 @@ ul {
 }
 #titreh3 {
   font-size: 30px;
-  font-family: "Arial";
+  font-family: verdana;
 }
 
 .panel {
@@ -119,10 +180,9 @@ button {
   background-color: rgb(225, 53, 53);
   color: aliceblue;
   font-size: 15px;
-  font-size: 15px;
   max-height: 110%;
   max-width: 110%;
-  border-radius: 10px;
+  border-radius: 8px;
 }
 
 #charte button {
@@ -153,6 +213,9 @@ h4 {
   border: solid 1px;
   margin: 20px;
   margin-bottom: 7%;
+}
+footer {
+  grid-area: i;
 }
 .bouton_rouge_bas {
   padding-left: 40%;
