@@ -177,8 +177,8 @@ button {
   font-size: 10px;
 }
 
-h4 {
-  font-size: 1.3vmax;
+p {
+  font-size: 1.4vmax;
   /* vw , vh, vmin VIEWWIDTH et VIEWHEIGHT VIEWMIN : Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
@@ -200,6 +200,7 @@ h4 {
 }
 footer {
   grid-area: i;
+  margin-bottom: 40%;
 }
 .bouton_rouge_bas {
   padding-left: 40%;
