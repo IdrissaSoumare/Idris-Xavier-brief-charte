@@ -26,18 +26,13 @@ content {
     ". h h h ."
     "i i i i i";
   align-items: center;
-  /*grid-template-columns: 40px 50px auto 50px 40px;
-  grid-template-rows: 25% 100px auto;*/
 }
 header {
   left: Opx;
   top: 0px;
   grid-area: a;
-  /*display: flex;*/
   height: auto;
   width: 100%;
-  padding-left: 4%;
-  /*padding-left: 15%;*/
   background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.65) 0px 0px 10px;
   justify-content: baseline;
@@ -48,15 +43,11 @@ button {
 }
 .bloc_b {
   grid-area: b;
-  margin-top: 10%;
+  max-width: 100%;
   margin-top: 5%;
+  /*margin: 0 auto;*/
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 1%;
-  grid-template-areas:
-    "a a . . b"
-    "a a . . ."
-    ". . . . .";
+  gap: 1%;
 }
 .bloc_c {
   grid-area: c;
@@ -77,31 +68,24 @@ button {
   grid-area: h;
 }
 .align-left {
-  position: relative;
-  left: 18%;
-  width: 100%;
-  display: flex;
-  float: left;
-  text-align: left;
-  text-align: justify;
+  margin-left: 20%;
+  width: auto;
 }
 
 #charte button {
   font-size: 10px;
 }
 .intro {
-  grid-area: a;
   text-justify: left;
-  padding-left: 11%;
-  width: 170%;
+  padding-left: 7%;
+  height: auto;
 }
 .bouton_rouge_haut {
-  display: inline-block;
-  flex-direction: column;
-  grid-area: b;
-  margin-top: 23%;
-  /*flex-direction: column;*/
-  /*size-adjust: auto;*/
+  height: auto;
+  max-width: 120px;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
 }
 #btn_rouge {
   height: 30px;
@@ -109,7 +93,7 @@ button {
 }
 h1 {
   /*margin-left: 65px;*/
-  text-align: center;
+  text-align: left;
   position: sticky;
   font-size: 2vw;
   font-size: 2.8vmax;
@@ -232,5 +216,12 @@ footer {
 
 @media only screen and (max-width: 610px) {
   .titre_h1 {
+    font-size: 8 rem;
+  }
+}
+/* En "Mobile first", cette ligne permet de mettre les elements sur deux colonnes quand l'ecran depasse 600px*/
+@media (min-width: 600px) {
+  .bloc_b {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
