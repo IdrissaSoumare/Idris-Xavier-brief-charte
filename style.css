@@ -5,22 +5,24 @@ body {
   /*align-items: center;*/
   justify-content: center;
 }
-container {
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 900px;
-}
+
 header {
   display: flex;
   height: auto;
   width: 100%;
   padding-left: 22%;
-  background-color: rgb(233, 233, 234);
+  margin-top: 0%;
+  background-color: rgb(250, 250, 251);
   box-shadow: rgba(0, 0, 0, 0.65) 0px 0px 10px;
-  justify-content: baseline;
   position: sticky;
   margin: auto;
   top: 0;
+}
+
+container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 900px;
 }
 
 #charte button {
@@ -128,6 +130,4 @@ button {
 }
 
 @media only screen and (max-width: 610px) {
-  .titre_h1 {
-  }
 }
