@@ -1,22 +1,75 @@
 body {
+  padding: Opx;
   background-color: rgb(233, 233, 234);
-  display: flex;
+  margin: 0px;
+  /*display: flex;
   flex-direction: column;
-  /*align-items: center;*/
+  align-items: center;*/
   justify-content: center;
+  /*font-size: 100%;*/
+  font-family: verdana;
 }
 
+content {
+  margin-top: 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 1%;
+  grid-template-areas:
+    "a a a a a"
+    ". b b b ."
+    ". c c c ."
+    ". d d d ."
+    ". e e e ."
+    ". f f f ."
+    ". g g g ."
+    ". h h h ."
+    "i i i i i";
+  align-items: center;
+}
 header {
-  display: flex;
+  left: Opx;
+  top: 0px;
+  grid-area: a;
   height: auto;
   width: 100%;
-  padding-left: 22%;
-  margin-top: 0%;
-  background-color: rgb(250, 250, 251);
+  background-color: rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.65) 0px 0px 10px;
-  position: sticky;
-  margin: auto;
-  top: 0;
+  justify-content: baseline;
+  position: fixed;
+}
+button {
+  border-style: none;
+}
+.bloc_b {
+  grid-area: b;
+  max-width: 100%;
+  margin-top: 5%;
+  /*margin: 0 auto;*/
+  display: grid;
+  gap: 1%;
+}
+.bloc_c {
+  grid-area: c;
+}
+.bloc_d {
+  grid-area: d;
+}
+.bloc_e {
+  grid-area: e;
+}
+.bloc_f {
+  grid-area: f;
+}
+.bloc_g {
+  grid-area: g;
+}
+.bloc_h {
+  grid-area: h;
+}
+.align-left {
+  margin-left: 20%;
+  width: auto;
 }
 
 container {
@@ -28,16 +81,45 @@ container {
 #charte button {
   font-size: 10px;
 }
+.intro {
+  text-justify: left;
+  padding-left: 7%;
+  height: auto;
+}
+.bouton_rouge_haut {
+  height: auto;
+  max-width: 120px;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+}
+#btn_rouge {
+  height: 30px;
+  width: 120px;
+}
 h1 {
   /*margin-left: 65px;*/
-  text-align: center;
+  text-align: left;
+  position: sticky;
+  font-size: 2vw;
+  font-size: 2.8vmax;
+  /*font-size: 4vmin;*/
+  /* vw , vh VIEWWIDTH et VIEWHEIGHT Valeurs adaptatives pour les largeurs d'écrans*/
+}
+.intro h2 {
+  font-size: 2.5vmax;
+  /* vw , vh VIEWWIDTH et VIEWHEIGHT Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
 h2 img {
   background-color: rgb(233, 233, 234);
 }
+
 p h1 h2 h3 h4 {
-  font-family: Arial;
+  font-family: verdana;
+}
+#titre_classe {
+  font-size: 160%;
 }
 
 ul {
@@ -58,7 +140,7 @@ ul {
 }
 #titreh3 {
   font-size: 30px;
-  font-family: "Arial";
+  font-family: verdana;
 }
 
 .panel {
@@ -75,6 +157,8 @@ ul {
   padding: 15px;
   margin: 20px;
   box-shadow: rgba(0, 0, 0, 0.65) 0px 5px 15px;
+  font-size: 1.2vmax;
+  /* vw , vh VIEWWIDTH et VIEWHEIGHT Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
 #charte {
@@ -82,18 +166,13 @@ ul {
   margin-right: 20px;
 }
 
-.bouton_rouge_haut {
-  display: flex;
-  float: right;
-}
 button {
   background-color: rgb(225, 53, 53);
   color: aliceblue;
   font-size: 15px;
-  font-size: 15px;
-  height: 30px;
-  width: 120px;
-  border-radius: 10px;
+  max-height: 110%;
+  max-width: 110%;
+  border-radius: 8px;
 }
 
 #charte button {
@@ -102,6 +181,11 @@ button {
 
 .bouton_rouge_bas button {
   font-size: 10px;
+}
+
+p {
+  font-size: 1.4vmax;
+  /* vw , vh, vmin VIEWWIDTH et VIEWHEIGHT VIEWMIN : Valeurs adaptatives pour les largeurs d'écrans*/
 }
 
 .differentes_regles {
@@ -120,14 +204,31 @@ button {
   margin: 20px;
   margin-bottom: 7%;
 }
+footer {
+  grid-area: i;
+  margin-bottom: 40%;
+}
 .bouton_rouge_bas {
   padding-left: 40%;
   display: flex;
   margin: auto;
+}
+#change {
+  height: 30px;
+  width: 120px;
 }
 .bouton_rouge_bas button {
   font-size: 10px;
 }
 
 @media only screen and (max-width: 610px) {
+  .titre_h1 {
+    font-size: 8 rem;
+  }
+}
+/* En "Mobile first", cette ligne permet de mettre les elements sur deux colonnes quand l'ecran depasse 600px*/
+@media (min-width: 600px) {
+  .bloc_b {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
